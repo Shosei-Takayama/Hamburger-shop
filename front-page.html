@@ -22,7 +22,7 @@
                     <h1>Hamburger</h1>
                 </div>
                 <!--検索フォーム-->
-                <div class="l-header-form">
+                <div class="c-header-form">
                     <form action="" class="p-search-form" method="post">
                         <input type="search" class="c-search-box" placeholder="">
                         <input type="submit" value="検索" class="c-submit-button">
@@ -36,8 +36,8 @@
             <!--サイトメイン部分-->
             <article class="p-content">
                 <!--メインの大きい画像-->
-                <div class="p-content-img">
-                    <img src="image/index_ttl.png" alt="ハンバーガーの画像" class="topimg">
+                <div class="p-main-cover">
+                    <img src="image/index_ttl.png" alt="ハンバーガーの画像" class="index-cover-img">
                     <p>ダミーサイト</p>
                 </div>
 
@@ -45,15 +45,16 @@
                 <div class="c-branch-menu">
                     <ul>
                         <li>
-                            <div class="c-menu-img-1">
-                                <img src="image/index-bg-1.png" alt="ハンバーガーの画像" class="toppage-menu-img">
+                            <div class="c-index-menu-img-1">
+                                <img src="image/index-bg-1.png" alt="ハンバーガーの画像" class="index-menu-img">
                             </div>
 
                             <div class="c-content-left">
-                                <h2>Take Out <br>__</h2>
+                                <h2>Take Out </h2>
+                                <p>__</p>
 
 
-                                <div class="c-dl-summary-left">
+                                <div class="c-summary-left">
                                     <dl>
                                         <dt>小見出しが入ります</dt>
                                         <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
@@ -75,14 +76,15 @@
 
 
                         <li>
-                            <div class="c-menu-img-2">
-                                <img src="image/index.bg-2.png" alt="ハンバーガーの画像" class="toppage-menu-img">
+                            <div class="c-index-menu-img-2">
+                                <img src="image/index.bg-2.png" alt="ハンバーガーの画像" class="index-menu-img">
                             </div>
 
                             <div class="c-content-right">
-                                <h2>Eat In <br>__</h2>
+                                <h2>Eat In </h2>
+                                <p>__</p>
 
-                                <div class="c-dl-summary-right">
+                                <div class="c-summary-right">
                                     <dl>
                                         <dt>小見出しが入ります</dt>
                                         <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
@@ -103,10 +105,15 @@
 
                 <!--サイトのアクセス情報-->
                 <section class="p-access">
-                    <img src="image/index-access-map.png" alt="地図の写真" class="c-access-map-img">
+                    
+                    <div class="p-index-access-bgimg">
+                    <img src="image/index-access-map.png" alt="地図の画像" class="index-access-map-img-pc">
+                    </div>
+
                     <div class="c-access-info">
-                        <h3>見出しが入ります<br>_____</h3>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        <h3>見出しが入ります</h3>
+                        <p>_______</p>
+                        <p class="access-map-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                         </p>
                     </div>
 
@@ -118,7 +125,11 @@
 
 
         <!--サイドバーメニュー-->
-        <nav class="p-sidebar">
+        <button type="button" class="btn-menu">
+            <input type="button" value="Menu">
+        </button>
+
+        <nav class="btn-sidebar p-sidebar">
             <h3>Menu</h3>
             <h4>バーガー</h4>
             <ul>
@@ -164,9 +175,11 @@
 
     <!--フッター-->
     <footer class="l-footer">
-        <div class="c-footer">
-        <img src="image/footer-cover-img.png" alt="背景画像" class="c-footer-cover-img">
+        <div class="footer-bg-img">
+            <img src="image/footer-cover-img.png" alt="背景画像" class="footer-img">
+        </div>
         
+        <div class="c-footer">
             <ul>
                 <li><a href="#">ショップ情報</a>|<a href="#">ヒストリー</a></li>
             </ul>
@@ -174,6 +187,7 @@
             <p class="copyright">Copyright: RaiseTech</p>
         </div>
     </footer>
+
 
 
 
