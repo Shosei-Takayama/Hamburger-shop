@@ -58,6 +58,17 @@ body {
   border-radius: 7px;
 }
 
+/*ハンバーガーメニューのボタン*/
+.p-hamburger {
+  top: 10px;
+  right: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #707070;
+  position: absolute;
+  z-index: 1001;
+}
+
 /*メインコンテンツ*/
 .p-main-cover {
   max-width: 1500px;
@@ -258,6 +269,13 @@ body {
 nav {
   width: 312px;
   height: 100%;
+  overflow: scroll;
+}
+
+nav.p-gmenu {
+  width: 200px;
+  height: 100%;
+  padding-bottom: 50%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transform: translate(312px);
@@ -266,12 +284,43 @@ nav {
   top: 0;
   right: 0;
   z-index: 1000;
-  background-color: #FFF7EF;
+  color: #707070;
+  background-color: #F2EDE9;
 }
 
 nav.open {
   -webkit-transform: translate(0);
           transform: translate(0);
+}
+
+.p-sidebar h3 {
+  display: none;
+}
+
+.inside-sidebar {
+  margin-top: 180px;
+}
+
+.p-sidebar h4 {
+  font-size: 17px;
+  padding: 0;
+  margin-top: 55px;
+  margin-left: 30px;
+  font-weight: lighter;
+}
+
+.p-sidebar ul {
+  margin-left: 10px;
+}
+
+.p-sidebar li {
+  list-style: none;
+  font-size: 10px;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-left: 30px;
+  font-size: 13px;
+  line-height: 2.2;
 }
 
 /*フッター*/
@@ -371,6 +420,9 @@ nav.open {
     font-size: 50px;
     color: #707070;
   }
+  .p-button {
+    display: block;
+  }
   /*検索フォーム*/
   .p-search-form {
     margin-top: 15%;
@@ -415,9 +467,6 @@ nav.open {
     background-color: rgba(0, 0, 0, 0.4);
   }
   /*サイドバー*/
-  .btn-menu {
-    display: none;
-  }
   .p-sidebar {
     display: block;
     width: 350px;
