@@ -12,6 +12,10 @@ body {
           box-sizing: border-box;
 }
 
+.wrapper {
+  width: 100%;
+}
+
 /*-----共通とスマートフォン-----*/
 /*ヘッダー*/
 .l-header {
@@ -67,6 +71,56 @@ body {
   color: #707070;
   position: absolute;
   z-index: 1001;
+}
+
+@media (min-width: 641px) {
+  .p-hamburger {
+    display: block;
+    font-size: 22px;
+    top: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-hamburger {
+    display: none;
+  }
+}
+
+.p-hamburger.open::before, .p-hamburger.open::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: #FFF7EF;
+  position: absolute;
+  left: calc 50% - 20px/2;
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.p-hamburger.open::before {
+  background: #000000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 28px;
+}
+
+.p-hamburger.open::after {
+  background: #000000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 28px;
+}
+
+.p-hamburger.open > span {
+  display: none;
+}
+
+body.open {
+  position: fixed;
 }
 
 /*メインコンテンツ*/
@@ -266,29 +320,58 @@ body {
 }
 
 /*サイドバー*/
+.l-sidebar.l-sidebar__bg {
+  display: block;
+  height: 100%;
+}
+
+.l-sidebar {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  top: 0;
+}
+
 nav {
   width: 312px;
-  height: 100%;
   overflow: scroll;
 }
 
 nav.p-gmenu {
-  width: 200px;
-  height: 100%;
+  width: 250px;
   padding-bottom: 50%;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   -webkit-transform: translate(312px);
           transform: translate(312px);
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10;
   color: #707070;
   background-color: #F2EDE9;
 }
 
+@media (min-width: 769px) {
+  nav.p-gmenu {
+    width: 350px;
+    margin-right: 0px;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: none;
+            transform: none;
+    position: static;
+    color: #707070;
+    background-color: #F2EDE9;
+  }
+}
+
 nav.open {
+  width: 250px;
+  height: 100%;
   -webkit-transform: translate(0);
           transform: translate(0);
 }
@@ -298,7 +381,7 @@ nav.open {
 }
 
 .inside-sidebar {
-  margin-top: 180px;
+  margin-top: 43%;
 }
 
 .p-sidebar h4 {
@@ -388,6 +471,7 @@ nav.open {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.4);
   }
+  /*----サイドバー ----*/
   /*----フッター----*/
   .footer-img {
     width: 100%;
@@ -419,9 +503,6 @@ nav.open {
     margin: 40px;
     font-size: 50px;
     color: #707070;
-  }
-  .p-button {
-    display: block;
   }
   /*検索フォーム*/
   .p-search-form {
@@ -467,14 +548,28 @@ nav.open {
     background-color: rgba(0, 0, 0, 0.4);
   }
   /*サイドバー*/
-  .p-sidebar {
-    display: block;
+  .l-sidebar.l-sidebar__bg {
+    width: inherit;
+    height: inherit;
+    padding: inherit;
+    position: static;
+    background: inherit;
+  }
+  .l-sidebar {
+    width: inherit;
+    height: inherit;
+    padding: inherit;
+    position: static;
+    background: inherit;
+  }
+  nav.p-gmenu {
     width: 350px;
     margin-right: 0px;
     color: #707070;
     background-color: #F2EDE9;
   }
   .p-sidebar h3 {
+    display: block;
     font-size: 22px;
     padding: 0;
     margin-top: 60px;
