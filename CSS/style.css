@@ -320,14 +320,14 @@ body.open {
 }
 
 /*サイドバー*/
-.l-sidebar.l-sidebar__bg {
+.l-sidebar-overlay.open {
   display: block;
   height: 100%;
 }
 
-.l-sidebar {
+.l-sidebar-overlay {
   width: 100%;
-  position: fixed;
+  position: absolute;
   right: 0;
   height: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -627,7 +627,7 @@ nav.open {
     font-weight: lighter;
   }
   /*サイドバー*/
-  .l-sidebar {
+  .l-sidebar-overlay {
     width: 0px;
     display: block;
     height: inherit;
@@ -635,7 +635,7 @@ nav.open {
     position: static;
     background: inherit;
   }
-  .l-sidebar__bg {
+  .l-sidebar-overlay.open {
     width: 0px;
     display: block;
     height: inherit;
