@@ -1,0 +1,89 @@
+
+$basecolor1: #FFF7EF;
+$basecolor2: #707070;
+$basecolor3: #000000;
+$basecolor4: #ffffff;
+$basecolor5: #F2EDE9;
+
+/*検索ボタン*/
+
+.c-submit-button {
+    border                  : 1px solid $basecolor2;
+    padding                 : 0px 15px;
+    background-color        : $basecolor5;
+    border-radius           : 7px;
+
+    @include breakpoint ( pc ) {
+        border              : 1px solid $basecolor2;
+        padding             : 0px 35px;
+        background-color    : $basecolor5;
+        border-radius       : 7px;
+    }
+}
+
+
+
+/*ハンバーガーメニューのボタン*/
+
+$btnWidth: 20px;
+$btnHeight: 1px;
+
+.p-hamburger {
+    top                     : 10px;
+    right                   : 30px;
+    font-size               : 1.6rem;
+    font-weight             : bold;
+    color                   : $basecolor2;
+    position                : absolute;
+    z-index                 : 1001;
+
+    @include breakpoint ( tablet ) {
+       
+        display             : block;
+        font-size           : 2.2rem;
+        top                 : 20px;
+           
+        
+    }
+
+    @include breakpoint( pc ) {
+		display             : none;
+    }
+    
+}
+
+    .p-hamburger.open {
+
+        &::before,
+        &::after {
+            content         : "";
+            width           : $btnWidth;
+            height          : $btnHeight;
+            background      : #FFF7EF;
+            position        : absolute;
+            display         : block;
+            transition      : transform 0.2s ;
+        }
+    
+
+        &::before {
+            background      : $basecolor3;
+            transform       :rotate( 45deg ) ;
+            top             : 28px;
+        }
+
+        &::after {
+            background      : $basecolor3;
+            transform       : rotate( -45deg );
+            top             : 28px;
+        }
+
+        >span {
+            display         : none;
+        }
+
+    }
+
+        body.open {
+            position        : fixed;  
+        }

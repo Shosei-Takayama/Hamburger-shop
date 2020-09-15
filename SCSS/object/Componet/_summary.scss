@@ -1,0 +1,40 @@
+
+
+$basecolor1: #FFF7EF;
+$basecolor2: #707070;
+$basecolor3: #000000;
+$basecolor4: #ffffff;
+$basecolor5: #F2EDE9;
+
+/*ブランチメニュー共通*/
+
+.c-branch-menu li{    
+    list-style              : none;
+    position                : relative;
+    padding                 : 10px;
+   
+}
+
+
+.c-summary dl {
+    background-color        : $basecolor4;
+    opacity                 : 0.7;
+    display                 : block;  
+    width                   : 90%;
+    padding                 : 5%;
+    margin-top              : 5%;   
+
+
+    & dt {
+    font-size               : 1.7rem;
+    margin-bottom           : 10px;
+    }
+
+    & dd {
+    font-size               : 1.1rem;
+    margin-left             : 0;
+    margin-bottom           : 10px;
+    }
+
+}
+

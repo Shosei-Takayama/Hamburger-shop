@@ -1,0 +1,168 @@
+$basecolor1: #FFF7EF;
+$basecolor2: #707070;
+$basecolor3: #000000;
+$basecolor4: #ffffff;
+$basecolor5: #F2EDE9;
+
+.l-sidebar-overlay.open {
+    display                     : block;
+    height                      : 100%;
+}
+
+.l-sidebar-overlay {
+    width                       : 100%;
+    position                    : absolute;
+    right                       : 0;
+    height                      : 0;
+    background-color            : rgba(0,0,0,0.6);
+    z-index                     : 0;
+    top                         : 0;
+}
+
+nav {
+    width                       : 312px;
+    overflow                    : scroll;
+    
+
+    
+    &.p-gmenu {
+        width                   : 250px;
+        padding-bottom          : 50%;
+        transition              : all 0.4s;
+        transform               : translate(312px);
+        position                : fixed;
+        top                     : 0;
+        right                   : 0;
+        z-index                 : 10;
+        color                   : $basecolor2;
+        background-color        : $basecolor5;
+
+        @include breakpoint( pc ) {
+            width               : 100%;
+            margin-right        : 0px;
+            transition          : none;
+            transform           : none;
+            position            : static;
+            color               : $basecolor2;
+            background-color    : $basecolor5;
+            padding-bottom      : 0px;
+        }
+    }
+    
+    &.open {
+        width                   : 250px;
+        height                  : 100%;
+        transform               : translate(0); 
+            }
+
+}
+
+
+
+.p-sidebar h3 {
+   display              : none;
+}
+
+
+
+.p-sidebar h4 {
+    font-size           : 1.7rem;
+    padding             : 0;
+    margin-top          : 55px;
+    margin-left         : 30px;
+    font-weight         : lighter;
+}
+
+.p-sidebar ul {
+    margin-left         : 10px;
+}
+
+.p-sidebar li{
+    list-style          : none;
+    font-size           : 1rem;  
+    padding-top         : 5px;
+    margin-top          : 5px;
+    margin-left         : 30px;
+    font-size           : 13px;
+    line-height         : 2.2;
+}   
+
+@media screen and(min-width:769px) {
+    
+    .l-sidebar {
+        width: 20%;
+
+        >.p-gmanu {
+            width: 100%;
+        }
+    }
+    
+    
+    /*サイドバー*/
+
+    .l-sidebar-overlay {
+        
+        width         : 0px;
+        display       : block;   
+        height        : inherit;
+        padding       : inherit;
+        position      : static;
+        background    : inherit;
+        
+    }
+
+
+    .l-sidebar-overlay.open{
+        width         : 0px;    
+        display       : block;
+        height        : inherit;
+        padding       : inherit;
+        position      : static;
+        background    : inherit;
+        
+       
+    }
+
+   
+
+    nav.p-gmenu {
+        width              : 250px;
+        min-width          : 208px;
+        margin-right       : 0px;
+        color              : $basecolor2;
+        background-color   : $basecolor5;
+        }
+
+    
+    .p-sidebar h3 {
+        display: block;
+        font-size: 2.2rem;
+        padding: 0;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+    
+    .p-sidebar h4 {
+        font-size: 1.9rem;
+        padding: 0;
+        margin-top: 55px;
+        margin-left: 30px;
+        font-weight: lighter;
+    }
+    
+    .p-sidebar ul {
+        margin-left: 0;
+    }
+    
+    .p-sidebar li {
+        list-style: none;
+        font-size: 1rem;  
+        padding-top: 10px;
+        margin-top: 5px;
+        margin-left: 50px;
+        font-size: 13px;
+        line-height: 2.2;
+    }
+    
+
+}

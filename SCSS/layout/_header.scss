@@ -1,0 +1,45 @@
+/*ヘッダー*/
+
+$basecolor1: #FFF7EF;
+$basecolor2: #707070;
+
+.l-header {
+    background-color        : $basecolor1;
+    padding                 : 1em 0;
+    margin-bottom           : 2em;
+    text-align              : center;
+    padding                 : 0;
+    padding-top             : 20px;
+    padding-bottom          : 20px;
+    margin                  : 0;
+
+
+    &-title h1 {
+        font-size               : 4rem;
+        color                   : $basecolor2;
+        margin-top              : 30px;
+
+    }
+ 
+}
+
+/*---pc----*/
+
+@include breakpoint( pc ) {
+        
+    .l-header {
+    width: 100%;
+    background-color: #FFF7EF;
+    display: flex;
+    justify-content: space-between;
+
+
+    &-title h1 {
+        margin: 40px;
+        font-size: 3rem;
+        color: $basecolor2;
+        
+    }
+}
+
+}

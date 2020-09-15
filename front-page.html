@@ -8,15 +8,14 @@
     <title>コーディング課題</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
 </head>
 
 <body>
 
-    <div class="wrapper">
+    <div class="l-wrapper">
 
-        <div class="main-wrapper">
+        <div class="l-main-wrapper">
 
             <header class="l-header">
 
@@ -26,9 +25,9 @@
                     </div>
 
                 <!--検索フォーム-->
-                    <div class="c-header-form">
-                        <form action="" class="p-search-form" method="post">
-                            <input type="search" class="c-search-box" placeholder="">
+                    <div class="p-header-form">
+                        <form action="" class="c-search-form" method="post">
+                            <input type="search" class="c-search-box " placeholder="" >
                             <input type="submit" value="検索" class="c-submit-button">
                         </form>
                     </div>
@@ -45,32 +44,32 @@
 
 
             <!--サイトメイン部分-->
-            <article class="p-content">
+            <article class="p-content ">
 
                 <!--メインの大きい画像-->
                     <div class="p-main-cover">
 
-                        <img src="image/index_ttl.png" alt="ハンバーガーの画像" class="index-cover-img">
+                        <img src="image/layout/index_ttl.png" alt="ハンバーガーの画像" class="index-cover-img">
                         <p>ダミーサイト</p>
 
                     </div>
 
                 <!--ブランチメニュー-->
-                <div class="c-branch-menu">
+                <div class="c-branch-menu l-branch-menu">
 
                     <ul>
                         <li>
-                                <div class="c-index-menu-img-1">
-                                    <img src="image/index-bg-1.png" alt="ハンバーガーの画像" class="index-menu-img">
+                                <div class="p-index-menu-img">
+                                    <img src="image/component_frontpage/index-bg-1.png" alt="ハンバーガーの画像" class="index-menu-img">
                                 </div>
 
-                                    <div class="c-content-left">
+                                    <div class="p-content-menu">
 
                                         <h2>Take Out </h2>
                                         <p>__</p>
 
 
-                                        <div class="c-summary-left">
+                                        <div class="l-summary c-summary">
 
                                             <dl>
                                                 <dt>小見出しが入ります</dt>
@@ -95,16 +94,16 @@
 
                         <li>
 
-                                <div class="c-index-menu-img-2">
-                                    <img src="image/index.bg-2.png" alt="ハンバーガーの画像" class="index-menu-img">
+                                <div class="p-index-menu-img">
+                                    <img src="image/component_frontpage/index.bg-2.png" alt="ハンバーガーの画像" class="index-menu-img">
                                 </div>
 
-                                    <div class="c-content-right">
+                                    <div class="p-content-menu">
 
                                         <h2>Eat In </h2>
                                         <p>__</p>
 
-                                        <div class="c-summary-right">
+                                        <div class="l-summary c-summary">
 
                                             <dl>
                                                 <dt>小見出しが入ります</dt>
@@ -131,7 +130,7 @@
                     
                     <div class="p-index-access-bgimg">
 
-                    <img src="image/index-access-map.png" alt="地図の画像" class="index-access-map-img-pc">
+                    <img src="image/layout/index-access-map.png" alt="地図の画像" class="index-access-map-img">
 
                     </div>
 
@@ -153,7 +152,7 @@
 
         <!--サイドバーメニュー-->
         
-        <!--サイドバーメニュー開いたときのグレー掛け-->
+        
             
 
             <nav class="p-gmenu p-sidebar">
@@ -198,6 +197,8 @@
                         </ul>   
            
                     </nav>
+
+                    <!--サイドバーメニュー開いたときのグレー掛け-->
                     <div class="l-sidebar-overlay ">
 
                     </div>
@@ -211,7 +212,7 @@
 
         <div class="footer-bg-img">
 
-            <img src="image/footer-cover-img.png" alt="背景画像" class="footer-img">
+            <img src="image/layout/footer-cover-img.png" alt="背景画像" class="footer-img">
 
         </div>
         

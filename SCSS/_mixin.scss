@@ -2,7 +2,7 @@
 
 @mixin breakpoint ( $point ) {
     @if $point == tablet {
-        @media ( min-width: 641px ) {
+        @media ( min-width: 481px ) {
             @content ;
         }
     }
@@ -14,7 +14,7 @@
     }
 
     @if $point == wide {
-        @media ( min-width: 1400px) {
+        @media ( min-width: 1024px) {
             @content ;
         }
     }

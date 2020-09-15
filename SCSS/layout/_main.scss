@@ -1,0 +1,44 @@
+
+/*wrapperの調整*/
+
+.l-wrapper {
+    width                   : 100%;
+    display                 : flex;     
+}
+
+.l-main-wrapper {
+    width                   : 100%;
+    }
+
+/*ブランチメニューのレイアウト*/
+
+.l-branch-menu {
+    width: 100%;
+    }
+
+.l-summary {
+    margin-top              : 75%;
+    margin-left             : 5%;
+
+    @include breakpoint( tablet ) {
+        margin-top          : 90%;
+    }
+
+    @include breakpoint( pc) {
+        margin-bottom       : 10%;
+    }
+
+}  /*----ブランチメニュー----*/
+
+
+.l-branch-menu ul {
+    justify-content: center;
+
+    @include breakpoint ( tablet ) {
+        display: flex;
+    }
+
+}
+
+
+    
