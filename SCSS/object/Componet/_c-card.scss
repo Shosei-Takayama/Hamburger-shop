@@ -1,0 +1,98 @@
+$basecolor1: #FFF7EF;
+$basecolor2: #707070;
+$basecolor3: #000000;
+$basecolor4: #ffffff;
+$basecolor5: #F2EDE9;
+
+.c-card {
+    
+        font-size       : 1.2rem;
+        background-color: #3C2B1C;
+        color           : $basecolor1;
+        font-family     : "m +1m";
+        margin          : 10px;
+        padding-bottom  : 10%;
+        justify-content: center;
+       
+        @include breakpoint ( tablet ) {
+            display: flex;
+            padding-bottom: 0;
+        }
+
+        @include breakpoint ( pc ) {
+            display: flex;
+            padding-bottom: 0;
+        }
+}
+
+.c-card-inner {
+    
+
+    & h3 {   
+        padding: 7.5% 5%;
+    }
+
+    & h4 {   
+        padding: 0% 5% ;
+    }
+    & p {  
+        padding: 0% 5% ;
+    }
+    
+    & a {
+        display             : block;
+        padding             : 3% 5%;
+        width               : 35%;
+        height              : 5%;
+        background-color    : #FFF7EF;
+        border-radius       : 10px;     
+        margin-top          : 10%;
+        margin-left         : auto;
+        margin-right        : auto;
+        text-align          : center;
+
+        @include breakpoint ( tablet ) {
+            margin-top          : 4%;
+        }
+
+        @include breakpoint ( pc ) {
+            margin-top          : 4%;
+        }
+
+    }
+
+    
+
+}
+
+.card-text {
+   
+    & h3 {
+        font-size: 1.4rem;
+        padding: 20px 15px;
+    }
+
+    & h4 {
+        font-size: 1rem;
+        padding: 0px 15px ;
+    }
+    & p {
+        font-size: 1rem;
+        padding: 0px 15px ;
+    }
+
+    & a {
+        color               : $basecolor2;
+    }
+ 
+
+
+}
+
+
+.card-image {
+    width                   : 100%;
+    min-height              : 190px;
+    object-fit              : cover;
+    vertical-align          : bottom;
+}

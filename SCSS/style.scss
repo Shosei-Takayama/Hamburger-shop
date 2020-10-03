@@ -28,6 +28,9 @@
 /*メインコンテンツ-アクセス情報*/
 @import "./object/Project/access";
 
+/*メインコンテンツ-アクセス情報*/
+@import "./object/Componet/pagenation";
+
 /*サイドバー*/
 
 @import "./layout/sidebar";
@@ -35,3 +38,5 @@
 /*フッター*/
 @import "./layout/footer";
 
+/*メインコンテンツ(archive-page.html)*/
+@import "./object/Componet/c-card";

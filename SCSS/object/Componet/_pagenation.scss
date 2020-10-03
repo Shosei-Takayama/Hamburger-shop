@@ -1,0 +1,109 @@
+$basecolor1: #FFF7EF;
+$basecolor2: #707070;
+$basecolor3: #000000;
+$basecolor4: #ffffff;
+$basecolor5: #F2EDE9;
+
+.pagenation-wrapper {
+    display: flex;
+    justify-content: center;
+}
+ 
+.pagenation-wrapper h4 {
+
+    display: none;
+    color: $basecolor2;
+
+    @include breakpoint ( tablet ) {
+        
+            display: block;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            padding-right: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+    }
+    
+    @include breakpoint ( pc ) {
+        
+            display: block;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            padding-right: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+
+}
+
+.c-pagenation {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+
+    @include breakpoint ( tablet ) {
+        justify-content: center;
+    }
+
+    @include breakpoint ( pc ) {
+        justify-content: center;
+    }
+    
+
+    > li:first-child:nth-child(2){
+        justify-content: flex-start;
+    }
+
+    >li:nth-child(12),li:nth-child(13){
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+
+.c-pagenation li {
+    padding:5px 10px;
+    border:1px $basecolor2 solid;
+    background-color: $basecolor4;
+}
+
+.c-pagenation li:hover {
+    color: $basecolor2;
+    background-color: #3C2B1C;
+}
+
+.c-pagenation li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $basecolor2;
+
+   
+}
+
+.c-pagenation li a:hover {
+    color: $basecolor1;
+    
+}
+
+
+
+.c-pagenation > li:nth-child(n+3):nth-child(-n+11){
+    display: none;
+
+    @include breakpoint ( tablet ) {
+        display: inline;
+    }
+
+    @include breakpoint ( pc ) {
+        display: inline;
+    }
+}
+
+
+
+

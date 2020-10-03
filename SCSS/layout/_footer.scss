@@ -4,12 +4,14 @@ $basecolor3: #000000;
 $basecolor4: #ffffff;
 $basecolor5: #F2EDE9;
 
+
 .l-footer {
     position: relative;
     width: 100%;
-
+    
     @include breakpoint ( pc ) {   
         width: 100%;
+        min-width: 910px;
 }
 }
 
