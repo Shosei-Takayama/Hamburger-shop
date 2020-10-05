@@ -5,24 +5,25 @@ $basecolor4: #ffffff;
 $basecolor5: #F2EDE9;
 
 .pagenation-wrapper {
-    display: flex;
-   justify-content: center;
+    display                     : flex;
+    justify-content             : center;
+
     @include breakpoint ( tablet ){
-    justify-content: center;
+    justify-content             : center;
     }
 
     @include breakpoint ( pc ){
-    justify-content: center;
+    justify-content             : center;
     }
 
 }
 
 .c-pagenation li.prev {
-    margin-right: 20px;
+    margin-right                : 20px;
 }
 
 .c-pagenation li.Next {
-    margin-left: 120px;
+    margin-left                 : 120px;
 }
 
 
@@ -32,31 +33,31 @@ $basecolor5: #F2EDE9;
 /**ページネーションの見出し**/
 .pagenation-wrapper h4 {
 
-    display: none;
-    color: $basecolor2;
+    display                     : none;
+    color                       : $basecolor2;
 
     @include breakpoint ( tablet ) {
             
-            display: block;
-            margin-top: 100px;
-            margin-bottom: 50px;
-            padding-left: 5px;
-            padding-right: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display             : block;
+            margin-top          : 100px;
+            margin-bottom       : 50px;
+            padding-left        : 5px;
+            padding-right       : 5px;
+            display             : flex;
+            justify-content     : center;
+            align-items         : center;
         
     }
     
     @include breakpoint ( pc ) {
         
-            display: block;
-            margin-top: 100px;
-            margin-bottom: 50px;
-            padding-right: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display             : block;
+            margin-top          : 100px;
+            margin-bottom       : 50px;
+            padding-right       : 5px;
+            display             : flex;
+            justify-content     : center;
+            align-items         : center;
     }
 
 }
@@ -64,20 +65,20 @@ $basecolor5: #F2EDE9;
 /**ページネーションのレイアウト**/
 
 .c-pagenation {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    display: flex;
+    margin-top                  : 50px;
+    margin-bottom               : 20px;
+    display                     : flex;
 
     @include breakpoint ( tablet ) {
-        margin-top: 100px;
-        margin-bottom: 50px;
-        justify-content: center;
+        margin-top              : 100px;
+        margin-bottom           : 50px;
+        justify-content         : center;
     }
 
     @include breakpoint ( pc ) {
-        margin-top: 100px;
-        margin-bottom: 50px;
-        justify-content: center;
+        margin-top              : 100px;
+        margin-bottom           : 50px;
+        justify-content         : center;
     }
     
     
@@ -87,38 +88,38 @@ $basecolor5: #F2EDE9;
 /**ページネーションのliの見た目のデザイン**/
 
 .c-pagenation li {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border:1px $basecolor2 solid;
-    background-color: $basecolor4;
+    display                     : inline-block;
+    width                       : 40px;
+    height                      : 40px;
+    line-height                 : 40px;
+    text-align                  : center;
+    border                      :1px $basecolor2 solid;
+    background-color            : $basecolor4;
 
     &:first-child{
-        border: none;
+        border                  : none;
     }
     
     &:last-child{
-        border: none;
+        border                  : none;
     }
 
     & a {
-        display: block; 
-    color: $basecolor2;
+        display                 : block; 
+        color                   : $basecolor2;
     }
 
     & a:hover {
-        color: $basecolor1;
-    background-color: #3C2B1C;
+        color                   : $basecolor1;
+        background-color        : #3C2B1C;
     }
 
     @include breakpoint ( tablet ){
-        margin-right: 2%;
+        margin-right            : 2%;
     }
 
     @include breakpoint ( tablet ){
-        margin-right: 2%;
+        margin-right            : 2%;
     }
 
     
@@ -129,37 +130,37 @@ $basecolor5: #F2EDE9;
 /**1〜９の番号の表示非表示(ページネーションのレスポンシブ表示)**/
 
 .c-pagenation li:nth-child(n+3):nth-child(-n+11){
-    display: none;
+    display                     : none;
 
     @include breakpoint ( tablet ) {
-        display: inline-block;
+        display                 : inline-block;
     }
 
     @include breakpoint ( pc ) {
-        display: inline-block;
+        display                 : inline-block;
     }
 }
 
 /**前へ・次への表示非表示(ページネーションのレスポンシブ表示)**/
 .c-pagenation li:nth-child(2) {
-    border: none;
+    border                      : none;
 
     @include breakpoint ( tablet ) {
-        display: none;
+        display                 : none;
     }
     @include breakpoint ( pc ) {
-        display: none;
+        display                 : none;
     }
 }
 
 .c-pagenation li:nth-child(12) {
-    border: none;
+    border                      : none;
 
     @include breakpoint ( tablet ) {
-        display: none;
+        display               : none;
     }
     @include breakpoint ( pc ) {
-        display: none;
+        display               : none;
     }
 }
 

@@ -6,29 +6,29 @@ $basecolor5: #F2EDE9;
 
 .c-card {
     
-        font-size       : 1.2rem;
-        background-color: #3C2B1C;
-        color           : $basecolor1;
-        font-family     : "m +1m";
-        margin          : 10px;
-        padding-bottom  : 10%;
-        justify-content: center;
+        font-size           : 1.2rem;
+        background-color    : #3C2B1C;
+        color               : $basecolor1;
+        font-family         : "m +1m";
+        margin              : 10px;
+        padding-bottom      : 10%;
+        justify-content     : center;
        
         @include breakpoint ( tablet ) {
-            display: flex;
-            padding-bottom: 0;
+            display         : flex;
+            padding-bottom  : 0;
         }
 
         @include breakpoint ( pc ) {
-            display: flex;
-            padding-bottom: 0;
+            display         : flex;
+            padding-bottom  : 0;
         }
 }
 
 .c-card-inner {
     
-        display: flex;
-        flex-direction: column;
+        display             : flex;
+        flex-direction      : column;
       
     
     & a {
@@ -52,17 +52,17 @@ $basecolor5: #F2EDE9;
 .card-text {
    
     & h3 {
-        font-size: 1.4rem;
-        padding: 20px 15px;
+        font-size           : 1.4rem;
+        padding             : 20px 15px;
     }
 
     & h4 {
-        font-size: 1rem;
-        padding: 0px 15px ;
+        font-size           : 1rem;
+        padding             : 0px 15px;
     }
     & p {
-        font-size: 1rem;
-        padding: 0px 15px ;
+        font-size           : 1rem;
+        padding             : 0px 15px;
     }
 
     & a {

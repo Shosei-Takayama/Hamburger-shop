@@ -103,7 +103,7 @@ li {
   .c-search-box {
     border: 1px solid #707070;
     border-radius: 7px;
-    width: 300px;
+    width: 200px;
     margin-right: 15px;
     font-size: 1.5rem;
     background-color: #ffffff;
@@ -345,11 +345,12 @@ span.product-name {
   padding: 40px;
 }
 
-.p-page-headingh2 {
+.p-page-heading h2 {
   font-size: 1.5rem;
+  padding-bottom: 10px;
 }
 
-.p-page-headingp {
+.p-page-heading p {
   font-size: 0.5rem;
 }
 
