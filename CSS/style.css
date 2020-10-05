@@ -976,41 +976,27 @@ nav.open {
   }
 }
 
-.c-card-inner h3 {
-  padding: 7.5% 5%;
-}
-
-.c-card-inner h4 {
-  padding: 0% 5%;
-}
-
-.c-card-inner p {
-  padding: 0% 5%;
+.c-card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .c-card-inner a {
   display: block;
-  padding: 3% 5%;
+  padding: 10px 10px;
   width: 35%;
-  height: 5%;
+  height: auto;
   background-color: #FFF7EF;
-  border-radius: 10px;
-  margin-top: 10%;
+  border-radius: 15px;
+  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-@media (min-width: 481px) {
-  .c-card-inner a {
-    margin-top: 4%;
-  }
-}
-
-@media (min-width: 769px) {
-  .c-card-inner a {
-    margin-top: 4%;
-  }
 }
 
 .card-text h3 {
