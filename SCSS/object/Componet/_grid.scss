@@ -1,0 +1,55 @@
+
+
+/*--------グリッドセクションメイン画像---------*/
+
+.content-img {
+    width: 100%;
+    
+    }
+
+
+.grid-wrapper {
+   justify-content: center;
+   margin-top: 50px;
+   margin-bottom: 10%;
+   padding-left: 70px;
+   padding-right: 70px;  
+
+   @include breakpoint ( tablet ) {
+    padding-left: 100px;
+    padding-right: 100px;  
+}
+
+   @include breakpoint ( pc ) {
+    padding-left: 100px;
+    padding-right: 100px;  
+}
+
+   
+}
+
+.grid-heading-img-wrapper {
+    width: 100%;
+    
+    & img {
+        width: 100%;   
+        height: auto;     
+    }
+}
+
+.c-grid-content {
+    display: grid;
+    justify-content: space-around;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+
+    @include breakpoint ( tablet ) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint ( pc ) {
+        grid-template-columns: repeat(3, 1fr);    
+    }
+}

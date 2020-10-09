@@ -19,9 +19,9 @@ $basecolor5: #F2EDE9;
         top                     : 30%;
         left                    : 5%;
         color                   : $basecolor4;
-        font-size               : 3rem;
+        font-size               : 2.5rem;
         font-family             : "m +1m";
-       
+       font-weight              : lighter;
     }
   
            
@@ -99,7 +99,7 @@ $basecolor5: #F2EDE9;
 
 
 
-/*メインコンテンツ(archive-page.html)*/
+/*--------メインコンテンツ(archive-page.html)--------*/
 
 p.heading-title {
     position                : absolute;
@@ -119,7 +119,7 @@ span.product-name {
 
 .p-page-heading {
     color                   :#3C2A10;
-    padding                 : 40px;
+    padding                 : 30px;
 
     & h2 {
         font-size           : 1.5rem;
@@ -145,4 +145,163 @@ span.product-name {
     height                  : 20vh;
     object-fit              : cover;
     vertical-align          : bottom;
+}
+
+
+
+/*--------メインコンテンツ(single-page.html)--------*/
+
+.p-heading-item {
+   padding: 25px ;
+
+   & h3,h4,h5,h6 {
+    color                   :#3C2A10;
+    font-family             : "m +1m";
+    padding                 : 10px;
+   }
+}
+
+/*--------記事セクション---------*/
+
+.p-single-content {
+    width: 100%;
+    padding:15px;
+    
+}
+
+.content-wrapper-center{
+    max-width: 2400px;
+    min-width: 200px;
+    margin-bottom: 10px;
+
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+
+   
+    
+}
+
+
+
+.content-wrapper-left {
+    display: flex;
+    padding: 0px;
+    color: #3C2A10;
+    
+        
+    & img {
+        width: 150px;
+        height: auto;
+        margin-right: 10px;
+
+        @include breakpoint( tablet ) {
+            width: 100%;
+        }
+
+        @include breakpoint( pc ) {
+            width: 100%;
+        }
+    }
+
+   
+}
+
+.content-wrapper-right {
+   display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    color: #3C2A10;
+    
+
+    & img {
+        width: 150px;
+        height: auto;
+        margin-left: 10px;
+
+        @include breakpoint( tablet ) {
+            width: 100%;
+        }
+
+        @include breakpoint( pc ) {
+            width: 100%;
+        }
+    }
+
+    
+}
+
+
+
+
+
+
+/*----順序リスト----*/
+
+.p-list-content {
+    color                   :#3C2A10;
+    font-family             : "m +1m";
+    margin-left: 30px;
+
+    & .list-content-1,.list-content-1 ul,.list-content-3{
+        list-style: none;
+    }
+}
+
+.list-content-wrapper {
+    padding-top: 30px;
+}
+
+.list-content ol {
+    padding: 20px 30px ;
+
+}
+
+
+.list-content-1 {
+    margin-top: 50px;
+    
+    ul {
+    padding: 20px 20px;
+    
+}
+}
+
+.c-sourceview {
+    background-color: #F5F5F5;
+
+}
+
+/*--------テーブルの装飾---------*/
+
+.table-wrapper {
+    padding: 20px 30px;
+    overflow-x: auto;
+}
+
+#table-bdr {
+    min-width: 640px;
+}
+
+#table-bdr ,#table-bdr tr,#table-bdr th, #table-bdr td{
+    border-collapse: collapse;
+    border: 1px solid #3C2A10;
+    padding: 20px 15px;
+    color: #3C2A10;
+}
+
+#table-bdr {
+
+    & th {
+        font-weight: 100;
+    }
+    
+    & td {
+     padding-right: 250px;
+   
+    }
+   
+
+
 }

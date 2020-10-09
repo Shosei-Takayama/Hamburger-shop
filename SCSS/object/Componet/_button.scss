@@ -5,9 +5,19 @@ $basecolor3: #000000;
 $basecolor4: #ffffff;
 $basecolor5: #F2EDE9;
 
+/*single-pageのボタン*/
+.c-button {
+    color                   : #3C2A10;
+    border                  : 1px solid $basecolor2;
+    padding                 : 15px 120px;
+    background-color        : $basecolor5;
+    border-radius           : 7px;
+
+}
+
 /*検索ボタン*/
 
-.c-submit-button {
+.c-submit-button{
     border                  : 1px solid $basecolor2;
     padding                 : 0px 15px;
     background-color        : $basecolor5;
