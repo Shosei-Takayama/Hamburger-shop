@@ -278,7 +278,7 @@
                     </nav>
 
                     <!--サイドバーメニュー開いたときのグレー掛け-->
-                    <div class="l-sidebar-overlay ">
+                    <div class="l-sidebar-overlay">
 
                     </div>
                     

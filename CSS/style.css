@@ -207,43 +207,6 @@ body.open {
   width: 100%;
 }
 
-/*ブランチメニューのレイアウト*/
-.l-branch-menu {
-  width: 100%;
-}
-
-.l-summary {
-  margin-top: 75%;
-  margin-left: 5%;
-}
-
-@media (min-width: 481px) {
-  .l-summary {
-    margin-top: 90%;
-  }
-}
-
-@media (min-width: 769px) {
-  .l-summary {
-    margin-bottom: 10%;
-  }
-}
-
-/*----ブランチメニュー----*/
-.l-branch-menu ul {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (min-width: 481px) {
-  .l-branch-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 /*articlesコンテンツ*/
 /*メインコンテンツ(front-page.html)*/
 .p-main-cover {
@@ -266,68 +229,6 @@ body.open {
 .index-cover-img {
   width: 100%;
   vertical-align: bottom;
-}
-
-/*ブランチメニューの画像の調整*/
-.p-index-menu-img {
-  max-width: 450px;
-  min-width: 300px;
-  padding: 5px;
-}
-
-@media (min-width: 481px) {
-  .p-index-menu-img {
-    min-width: 50%;
-  }
-}
-
-@media (min-width: 769px) {
-  .p-index-menu-img {
-    max-width: 100vw;
-    min-width: 300px;
-    padding: 5px;
-  }
-}
-
-.index-menu-img {
-  width: 100%;
-  min-height: 600px;
-  max-height: 650px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (min-width: 769px) {
-  .index-menu-img {
-    max-height: 1000px;
-  }
-}
-
-/*ブランチメニューの見出しと本文の調整*/
-.p-content-menu {
-  position: absolute;
-  top: 0%;
-}
-
-.p-content-menu h2 {
-  font-size: 4rem;
-  color: #ffffff;
-  display: block;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 7%;
-  left: 6%;
-}
-
-.p-content-menu p {
-  font-size: 3rem;
-  color: #ffffff;
-  display: inline-block;
-  padding: 0;
-  margin-left: 5%;
-  position: absolute;
-  top: 15%;
 }
 
 /*--------メインコンテンツ(archive-page.html)--------*/
@@ -516,6 +417,43 @@ span.product-name {
 }
 
 /*ブランチメニューコンテンツ*/
+/*ブランチメニューのレイアウト*/
+.l-branch-menu {
+  width: 100%;
+}
+
+.l-summary {
+  margin-top: 75%;
+  margin-left: 5%;
+}
+
+@media (min-width: 481px) {
+  .l-summary {
+    margin-top: 90%;
+  }
+}
+
+@media (min-width: 769px) {
+  .l-summary {
+    margin-bottom: 10%;
+  }
+}
+
+/*----ブランチメニュー----*/
+.l-branch-menu ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 481px) {
+  .l-branch-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 /*ブランチメニュー共通*/
 .c-branch-menu li {
   list-style: none;
@@ -541,6 +479,68 @@ span.product-name {
   font-size: 1.1rem;
   margin-left: 0;
   margin-bottom: 10px;
+}
+
+/*ブランチメニューの見出しと本文の調整*/
+.p-content-menu {
+  position: absolute;
+  top: 0%;
+}
+
+.p-content-menu h2 {
+  font-size: 4rem;
+  color: #ffffff;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 7%;
+  left: 6%;
+}
+
+.p-content-menu p {
+  font-size: 3rem;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0;
+  margin-left: 5%;
+  position: absolute;
+  top: 15%;
+}
+
+/*ブランチメニューの画像の調整*/
+.p-index-menu-img {
+  max-width: 450px;
+  min-width: 300px;
+  padding: 5px;
+}
+
+@media (min-width: 481px) {
+  .p-index-menu-img {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-index-menu-img {
+    max-width: 100vw;
+    min-width: 300px;
+    padding: 5px;
+  }
+}
+
+.index-menu-img {
+  width: 100%;
+  min-height: 600px;
+  max-height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 769px) {
+  .index-menu-img {
+    max-height: 1000px;
+  }
 }
 
 /*メインコンテンツ-アクセス情報*/
@@ -1024,7 +1024,7 @@ nav.open {
 @media (min-width: 769px) {
   .l-footer {
     width: 100%;
-    min-width: 910px;
+    min-width: 769px;
   }
 }
 
