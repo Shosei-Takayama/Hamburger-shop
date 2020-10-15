@@ -52,10 +52,13 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .l-header-title h1 {
+  .l-header-title {
     margin: 40px;
     font-size: 3rem;
     color: #707070;
+  }
+  .l-header-title > a {
+    text-decoration: none;
   }
 }
 
@@ -89,7 +92,7 @@ a {
   margin-right: 8px;
   font-size: 1.5rem;
   background-color: #ffffff;
-  background-image: url("../image/layout/search_bgimage.png");
+  background-image: url("<?php echo get_template_directory_uri(); ?>/image/layout/search_bgimage.png");
   background-size: 10%;
   background-repeat: no-repeat;
   background-position: 2px center;
@@ -205,6 +208,43 @@ body.open {
 
 .l-main-wrapper {
   width: 100%;
+}
+
+/*ブランチメニューのレイアウト*/
+.l-branch-menu {
+  width: 100%;
+}
+
+.l-summary {
+  margin-top: 75%;
+  margin-left: 5%;
+}
+
+@media (min-width: 481px) {
+  .l-summary {
+    margin-top: 90%;
+  }
+}
+
+@media (min-width: 769px) {
+  .l-summary {
+    margin-bottom: 10%;
+  }
+}
+
+/*----ブランチメニュー----*/
+.l-branch-menu ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 481px) {
+  .l-branch-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /*articlesコンテンツ*/
@@ -417,43 +457,6 @@ span.product-name {
 }
 
 /*ブランチメニューコンテンツ*/
-/*ブランチメニューのレイアウト*/
-.l-branch-menu {
-  width: 100%;
-}
-
-.l-summary {
-  margin-top: 75%;
-  margin-left: 5%;
-}
-
-@media (min-width: 481px) {
-  .l-summary {
-    margin-top: 90%;
-  }
-}
-
-@media (min-width: 769px) {
-  .l-summary {
-    margin-bottom: 10%;
-  }
-}
-
-/*----ブランチメニュー----*/
-.l-branch-menu ul {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (min-width: 481px) {
-  .l-branch-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 /*ブランチメニュー共通*/
 .c-branch-menu li {
   list-style: none;

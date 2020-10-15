@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>コーディング課題</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
 
 </head>
@@ -62,7 +62,7 @@
                 <!--カード-->
                 <div class="c-card">   
                     <figure class="card__thumbnail">
-                        <img src="./image/component_archivepage/archive-c-card-pc.png" alt="窓際に置かれたハンバーガーの画像" class="card-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/image/component_archivepage/archive-c-card-pc.png" alt="窓際に置かれたハンバーガーの画像" class="card-image">
                     </figure>  
 
                         <div class="c-card-inner card-text"> 
@@ -77,7 +77,7 @@
 
                 <div class="c-card">   
                     <figure class="card__thumbnail">
-                        <img src="./image/component_archivepage/archive-c-card-pc.png" alt="窓際に置かれたハンバーガーの画像" class="card-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/image/component_archivepage/archive-c-card-pc.png" alt="窓際に置かれたハンバーガーの画像" class="card-image">
                     </figure>  
 
                         <div class="c-card-inner card-text"> 
@@ -92,7 +92,7 @@
 
                 <div class="c-card">   
                     <figure class="card__thumbnail">
-                        <img src="./image/component_archivepage/archive-c-card-pc.png" alt="窓際に置かれたハンバーガーの画像" class="card-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/image/component_archivepage/archive-c-card-pc.png" alt="窓際に置かれたハンバーガーの画像" class="card-image">
                     </figure>  
 
                         <div class="c-card-inner card-text"> 
@@ -218,7 +218,7 @@
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./JavaScript/hamburger.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/JavaScript/hamburger.js"></script>
     
     
 </body>

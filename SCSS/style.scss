@@ -1,49 +1,49 @@
 
 
 /*body*/
-@import "./foundation/base";
+@import "<?php echo get_template_directory_uri(); ?>/foundation/base";
 
 /*mixin*/
-@import "./_mixin";
+@import "<?php echo get_template_directory_uri(); ?>/_mixin";
 
 /*ヘッダー*/
 
-@import "./layout/header";
+@import "<?php echo get_template_directory_uri(); ?>/layout/header";
 
 /*検索フォーム*/
-@import "./object/Componet/search-form";
+@import "<?php echo get_template_directory_uri(); ?>/object/Componet/search-form";
 
 /*ボタンの実装*/
-@import "./object/Componet/button";
+@import "<?php echo get_template_directory_uri(); ?>/object/Componet/button";
  
 /*メインコンテンツ*/
-@import "./layout/main";
+@import "<?php echo get_template_directory_uri(); ?>/layout/main";
 
 /*articlesコンテンツ*/
-@import "./object/Project/articles";
+@import "<?php echo get_template_directory_uri(); ?>/object/Project/articles";
 
 /*ブランチメニューコンテンツ*/
-@import "./object/Componet/summary";
+@import "<?php echo get_template_directory_uri(); ?>/object/Componet/summary";
 
 /*メインコンテンツ-アクセス情報*/
-@import "./object/Project/access";
+@import "<?php echo get_template_directory_uri(); ?>/object/Project/access";
 
 /*メインコンテンツ-アクセス情報*/
-@import "./object/Componet/pagenation";
+@import "<?php echo get_template_directory_uri(); ?>/object/Componet/pagenation";
 
 /*サイドバー*/
 
-@import "./layout/sidebar";
+@import "<?php echo get_template_directory_uri(); ?>/layout/sidebar";
 
 /*フッター*/
-@import "./layout/footer";
+@import "<?php echo get_template_directory_uri(); ?>/layout/footer";
 
 /*メインコンテンツ(archive-page.html)*/
-@import "./object/Componet/c-card";
+@import "<?php echo get_template_directory_uri(); ?>/object/Componet/c-card";
 
 /*シングルコンテンツ(single-page.html)*/
 
-@import "./object/Componet/blockquote";
+@import "<?php echo get_template_directory_uri(); ?>/object/Componet/blockquote";
 
 /*gridコンテンツ*/
-@import "./object/Componet/grid";
+@import "<?php echo get_template_directory_uri(); ?>/object/Componet/grid";

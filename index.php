@@ -1,23 +1,11 @@
 
-    <div class="l-wrapper">
-
-        <div class="l-main-wrapper">
-
-            <?php get_header(); ?> <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
-
-
-
-
-
-
-
             <!--サイトメイン部分-->
             <article class="p-content ">
 
                 <!--メインの大きい画像-->
                     <div class="p-main-cover">
 
-                        <img src="<?php echo get_template_directory_uri(); ?>/image/layout/index_ttl.png" alt="ハンバーガーの画像" class="index-cover-img">
+                        <img src="image/layout/index_ttl.png" alt="ハンバーガーの画像" class="index-cover-img">
                         <p class="main-title">ダミーサイト</p>
 
                     </div>
@@ -28,7 +16,7 @@
                     <ul>
                         <li>
                                 <div class="p-index-menu-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/image/component_frontpage/index-bg-1.png" alt="ハンバーガーの画像" class="index-menu-img">
+                                    <img src="image/component_frontpage/index-bg-1.png" alt="ハンバーガーの画像" class="index-menu-img">
                                 </div>
 
                                     <div class="p-content-menu">
@@ -63,7 +51,7 @@
                         <li>
 
                                 <div class="p-index-menu-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/image/component_frontpage/index.bg-2.png" alt="ハンバーガーの画像" class="index-menu-img">
+                                    <img src="image/component_frontpage/index.bg-2.png" alt="ハンバーガーの画像" class="index-menu-img">
                                 </div>
 
                                     <div class="p-content-menu">
@@ -98,7 +86,7 @@
                     
                     <div class="p-index-access-bgimg">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/layout/index-access-map.png" alt="地図の画像" class="index-access-map-img">
+                    <img src="image/layout/index-access-map.png" alt="地図の画像" class="index-access-map-img">
 
                     </div>
 
@@ -118,17 +106,69 @@
         </div>
 
 
-       <?php get_sidebar(); ?> <!--siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
+        <!--サイドバーメニュー-->
+        
+        
+            
 
+            <nav class="p-gmenu p-sidebar">
+                
+
+                    <h3>Menu</h3>
+
+                    
+                        
+                        <h4>バーガー</h4>
+
+                        <ul>
+
+                            <li>ハンバーガー</li>
+                            <li>チーズバーガー</li>
+                            <li>テリヤキバーガー</li>
+                            <li>アボカドバーガー</li>
+                            <li>フィッシュバーガー</li>
+                            <li>ベーコンバーガー</li>
+                            <li>チキンバーガー</li>
+                        </ul>
+
+                        <h4>サイド</h4>
+
+                        <ul>
+
+                            <li>ポテト</li>
+                            <li>サラダ</li>
+                            <li>ナゲット</li>
+                            <li>コーン</li>
+                        </ul>
+
+                        <h4>ドリンク</h4>
+                        <ul>
+
+                            <li>コーラ</li>
+                            <li>ファンタ</li>
+                            <li>オレンジ</li>
+                            <li>アップル</li>
+                            <li>紅茶(Ice/Hot)</li>
+                            <li>コーヒー(Ice/Hot)</li>
+                        </ul>   
+           
+                    </nav>
+
+                    <!--サイドバーメニュー開いたときのグレー掛け-->
+                    <div class="l-sidebar-overlay ">
+
+                    </div>
+                    
     </div>
-
-
-    <?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
-
 
 
 
    
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/JavaScript/hamburger.js"></script>
     
 </body>
 

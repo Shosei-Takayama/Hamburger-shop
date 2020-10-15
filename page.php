@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>コーディング課題</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
 </head>
 
@@ -83,20 +83,20 @@
 
                     <div class="content-wrapper-center">
                     <figure class="content-center-img">
-                        <img src="./image/componet_singlepage/single-page_image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-center-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/single-page_image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-center-img">
                     </figure>
                     </div>
 
                     <div class="content-wrapper-left">
                         <figure class="content-left">
-                        <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-left-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-left-img">
                         </figure>
                         <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
                     </div>
 
                     <div class="content-wrapper-right">
                         <figure class="content-right">
-                        <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-right-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-right-img">
                         </figure>
                         <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                     </div>
@@ -108,37 +108,37 @@
                     
                     <div class="grid-wrapper">
                         <div class="grid-heading-img-wrapper">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-heading-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-heading-img">
                         </div>
                     </div>
 
                         <div class="c-grid-content">
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
                             <div class="grid-item">
-                            <img src="./image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/componet_singlepage/content-image.png" alt="ハンバーガーとポテトが並んだ画像" class="content-img">
                             </div>
  
                     
@@ -310,7 +310,7 @@
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./JavaScript/hamburger.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/JavaScript/hamburger.js"></script>
     
 </body>
 
