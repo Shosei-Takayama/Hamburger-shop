@@ -1,15 +1,4 @@
-
-    <div class="l-wrapper">
-
-        <div class="l-main-wrapper">
-
-            <?php get_header(); ?> <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
-
-
-
-
-
-
+<?php get_header(); ?> <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
 
             <!--サイトメイン部分-->
             <article class="p-content ">
@@ -118,18 +107,12 @@
         </div>
 
 
-       <?php get_sidebar(); ?> <!--siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
+    <?php get_sidebar(); ?> <!--siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
 
-    </div>
-
-
-    <?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
+  <?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
 
 
 
 
    
     
-</body>
-
-</html>

@@ -10,12 +10,22 @@
 
 <div class="c-footer">
 
-    <ul>
-        <li><a href="#">ショップ情報</a>|<a href="#">ヒストリー</a></li>
-    </ul>
+<?php wp_nav_menu( array('menu' => 'footer_nav') ); ?>
 
     <p class="copyright">Copyright: RaiseTech</p>
 
 </div>
 
+
 </footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/JavaScript/hamburger.js"></script>
+    
+
+<?php wp_footer(); ?>
+
+
+</body>
+
+</html>
