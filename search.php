@@ -7,15 +7,12 @@
                     <div class="p-archive-main-cover">
 
                         <img src="<?php echo get_template_directory_uri(); ?>/image/component_archivepage/archive-main.png" alt="ハンバーガーの画像" class="archive-cover-img">
-                        <p class="heading-title">menu:<span class="product-name"><?php wp_title( '' ); ?></span></p>
+                        <p class="heading-title">search:<span class="product-name"><?php wp_title( '' ); ?></span></p>
                       
                     </div>
 
                 <!--ページの見出し-->
-                <div class="p-page-heading">
-                    <h2>小見出しが入ります</h2>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                </div>
+              
 
                 <?php if ( have_posts() ): 
                  while ( have_posts() ): 
@@ -48,14 +45,17 @@
 
 
                 <?php endwhile; ?>
+                <?php else: ?>
+                    <div class="searchnotfound">
+                        <p>検索結果はありませんでした</p>
+                    </div>
             <?php endif; ?>
                
 
 
             </article>
-            <?php my_pagenavi(); ?>
 
-           
+            <?php my_pagenavi(); ?>
                 
         </div>
 

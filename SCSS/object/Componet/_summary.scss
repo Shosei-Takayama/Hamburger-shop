@@ -16,28 +16,44 @@ $basecolor5: #F2EDE9;
     list-style              : none;
     position                : relative;
     padding                 : 10px;
-   
 }
+
+
 
 
 .c-summary dl {
     background-color        : $basecolor4;
+    color                   : $basecolor3;
     opacity                 : 0.7;
     display                 : block;  
     width                   : 90%;
     padding                 : 5%;
     margin-top              : 5%;   
-
+   
 
     & dt {
-    font-size               : 1.7rem;
+    font-size               : 1.6rem;
     margin-bottom           : 10px;
+
     }
 
     & dd {
-    font-size               : 1.1rem;
+    font-size               : 0.8rem;
     margin-left             : 0;
     margin-bottom           : 10px;
+        
+    @include breakpoint ( tablet ) {
+        margin-bottom           : 5px;
+    }
+
+    @include breakpoint ( pc ) {
+        margin-bottom           : 8px;
+    }
+
+    @include breakpoint ( wide ) {
+        margin-bottom           : 15px;
+    }
+
     }
 
 
@@ -70,6 +86,8 @@ $basecolor5: #F2EDE9;
     position                : absolute;
     top                     : 15%;   
     }
+
+    
 }
 
 
