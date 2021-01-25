@@ -1,17 +1,26 @@
 <?php get_header(); ?> <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->  
 
             <!--サイトメイン部分-->
-            <article class="p-content ">
+            <?php if ( have_posts() ): 
+                 while ( have_posts() ): 
+                 the_post(); ?>
+                 
+            <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?> class="p-content" >
 
                 <!--メインの大きい画像-->
                     <div class="p-main-cover">
 
-                        <img src="image/componet_singlepage/product-image.png" alt="チーズバーガーの画像" class="index-cover-img">
-                        <h1 class="main-title">h1 チーズバーガー</h1>
-
+                        <img src=<?php if( has_post_thumbnail( )) {
+                        echo get_the_post_thumbnail( $post->ID, 'medium_large', 
+                        array( 'class' => 'thumbnail-cover-img'),false); } ?>
+                        <h1 class="main-title"><?php the_title(); ?></h1>
                     </div>
+                    <?php the_content(); ?>
+            </article>
 
-                <section class="heading-content">
+            
+
+            <section class="heading-content">
                      <!--ページの見出し-->
                 <div class="p-page-heading">
                     <h2>小見出しが入ります</h2>
@@ -179,9 +188,10 @@
                 
 
                
-               
-
-            </article>
+                    <?php endwhile; ?>
+            <?php endif; ?>
+            
+           
 
         </div>
 

@@ -11,7 +11,6 @@ $basecolor5: #F2EDE9;
 
         @include breakpoint ( pc ) {
         
-        margin-top          : 15%;
         padding             : 0;
         margin-right        : 20px;  
         display             : flex;
@@ -29,7 +28,6 @@ $basecolor5: #F2EDE9;
     margin-right            : 8px;
     font-size               : 1.5rem;
     background-color        : $basecolor4;
-    background-image        : url("<?php echo get_template_directory_uri(); ?>/image/layout/search_bgimage.png");
     background-size         : 10%;
     background-repeat       : no-repeat;
     background-position     : 2px center;
@@ -43,4 +41,10 @@ $basecolor5: #F2EDE9;
         background-color    : $basecolor4;
         background-size     : 7%;
     }
+}
+
+.searchnotfound {
+    padding: 10px;
+    color: $basecolor2;
+    font-size: 1.5rem;
 }

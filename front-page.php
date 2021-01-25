@@ -8,14 +8,16 @@
 
                         <img src="<?php echo get_template_directory_uri(); ?>/image/layout/index_ttl.png" alt="ハンバーガーの画像" class="index-cover-img">
                         <p class="main-title">ダミーサイト</p>
-
                     </div>
 
                 <!--ブランチメニュー-->
                 <div class="c-branch-menu l-branch-menu">
 
                     <ul>
+                        
                         <li>
+                            
+                            
                                 <div class="p-index-menu-img">
                                     <img src="<?php echo get_template_directory_uri(); ?>/image/component_frontpage/index-bg-1.png" alt="ハンバーガーの画像" class="index-menu-img">
                                 </div>
@@ -27,29 +29,38 @@
 
 
                                         <div class="l-summary c-summary">
-
-                                            <dl>
-                                                <dt>小見出しが入ります</dt>
-                                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                                </dd>
-                                            </dl>
-
-                                            <dl>
-                                                <dt>小見出しが入ります</dt>
-                                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                                </dd>
-                                            </dl>
+                                            <?php $my_cat_name = 'Take out';
+                                            $category_id = get_cat_ID( $my_cat_name );
+                                            $category_link = get_category_link( $category_id ); ?>
                                             
+                                        <a class="l-summary" 
+                                        href="<?php echo esc_url( $category_link ) ;?>" title="<?php echo $my_cat_name; ?>"  > 
+                                        
+                                            <dl>    
+                                                <dt>小見出しが入ります</dt>
+                                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                </dd>
+                                            </dl>
+
+                                            <dl>
+                                                <dt>小見出しが入ります</dt>
+                                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                </dd>
+                                            </dl>
+                                        </a>  
                                         </div>
 
                                     </div>
+
                         </li>
+                    
 
 
 
 
 
                         <li>
+                        <a href="<?php echo get_permalink(); ?>">
 
                                 <div class="p-index-menu-img">
                                     <img src="<?php echo get_template_directory_uri(); ?>/image/component_frontpage/index.bg-2.png" alt="ハンバーガーの画像" class="index-menu-img">
@@ -61,22 +72,28 @@
                                         <p>__</p>
 
                                         <div class="l-summary c-summary">
-
-                                            <dl>
-                                                <dt>小見出しが入ります</dt>
-                                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                                </dd>
-                                            </dl>
-
-                                            <dl>
-                                                <dt>小見出しが入ります</dt>
-                                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                                </dd>
-                                            </dl>
+                                        <?php $my_cat_name = 'Eat In';
+                                            $category_id = get_cat_ID( $my_cat_name );
+                                            $category_link = get_category_link( $category_id ); ?>
                                             
+                                        <a class="l-summary" 
+                                        href="<?php echo esc_url( $category_link ) ;?>" title="<?php echo $my_cat_name; ?>"  > 
+                                            <dl>    
+                                                <dt>小見出しが入ります</dt>
+                                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                </dd>
+                                            </dl>
+
+                                            <dl>
+                                                <dt>小見出しが入ります</dt>
+                                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                                </dd>
+                                            </dl>
+                                        </a>  
                                         </div>
                                         
                                     </div>
+                                    </a>
                         </li>
                     </ul>
                 </div>
@@ -90,7 +107,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/image/layout/index-access-map.png" alt="地図の画像" class="index-access-map-img">
 
                     </div>
-
+                    <a href="<?php echo get_category('page'); ?>">
                         <div class="c-access-info">
 
                             <h3>見出しが入ります</h3>
@@ -99,7 +116,7 @@
                             </p>
                             
                         </div>
-
+                    </a>
                 </section>
 
             </article>

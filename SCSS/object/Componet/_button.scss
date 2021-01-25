@@ -12,6 +12,7 @@ $basecolor5: #F2EDE9;
     padding                 : 15px 120px;
     background-color        : $basecolor5;
     border-radius           : 7px;
+    margin                  : 10px;
 
 }
 
@@ -39,7 +40,7 @@ $btnWidth: 20px;
 $btnHeight: 1px;
 
 .p-hamburger {
-    top                     : 10px;
+    top                     : 40px;
     right                   : 30px;
     font-size               : 1.6rem;
     font-weight             : bold;
@@ -51,7 +52,7 @@ $btnHeight: 1px;
        
         display             : block;
         font-size           : 2.2rem;
-        top                 : 20px;
+        top                 : 40px;
            
         
     }
@@ -94,6 +95,4 @@ $btnHeight: 1px;
 
     }
 
-        body.open {
-            position        : fixed;  
-        }
+        
